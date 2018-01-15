@@ -15,12 +15,11 @@ body {
         background-size: cover;
         height: 100vh;
         width: 100%;
+
     }
     .header img{
         display: inline-block;
         text-align: left;
-        position: fixed;
-
     }
     .title h1 {
         display: inline-block;
@@ -31,32 +30,31 @@ body {
         text-align: center;
     }
         .navbar{
-            background: #E9967A;
+            background: #C88400;
             display: flex;
             justify-content: space-around;
-            padding-top: -10px;
             padding-bottom: 15px;
-            margin-top: 20px; 
-            width: 100%;
+            width: 97.5%;
+            position: fixed;
+            z-index: 100;
+            opacity: .9;
         }
         .navbar li {
-        padding: 5px 5px;
-        margin-top: 20px;
+        margin-top: 10px;
         list-style: none;
         text-align: center;
-        float: left;
         font: 100% $font-stack;
-        background-color: #E9967A;
         }
         a {
         text-decoration: none;
         color: $primary-color;
-        font-size: 15px;
+        font-size: 18px;
+        z-index: 50;
         }
         a:hover{
-            background-color: pink;
+            background-color: #000;
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
         @media screen and (min-width:600px) {
         .topnav a:not(:first-child) {
@@ -80,11 +78,6 @@ body {
     height: 100vh;
     width: 100%;
     }
-.wrapper{
-    width: 100%;
-    max-width:852px;
-    margin: 0 auto;
-}
 .content1 p {
     display: inline-block;
     border-left: 6px solid #000;
@@ -103,40 +96,43 @@ body {
     border-bottom-right-radius: 100% 100%;
     border-bottom-left-radius: 100% 100%;
     }
-.wrapper {
+.aimee {
     display: inline-block;
     padding-left: 50px;
-    padding-right: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    top: -100px;
     font: 100% $font-stack;
     color: #fff;
-    position: relative;
     text-align: justify;
+    width: 100%;
+    margin: 0 auto;
+    padding: auto;
+    margin-top: -200px;
+    line-height: 1;
    }
 .layer{
     position: absolute;
+    border: 1px solid #fff;
     background-color: #000;
     opacity: .8;
-    width: 100%;
-    height: 100%;
 }
+    .wrapper {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 960px; 
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
 #content3 {
-    display: flex;
-    align-items: flex-start;
-    background: url('images/mee1.jpg') no-repeat;
-    border-top-left-radius: 1%;
-    border-top-right-radius: 1%;
-    border-bottom-right-radius: 1%;
-    border-bottom-left-radius: 1%;
     position: relative;
     margin-right: auto;
-    margin-left: auto;
-    border: 1px solid white;
-    max-width: 50%;
-    height: 23%;
-    top: -70%;
+    margin-left: 40%;
+    max-width: 90%;
+    height: 100vh;
+    margin-top: -40%; 
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+    border-bottom-right-radius: 100% 100%;
+    border-bottom-left-radius: 100% 100%;
     }
 #content3 h3{
     margin-left: 10%;
@@ -156,6 +152,7 @@ body {
     font-family: $font-stack;
     color: #fff;
     z-index: 10;
+    line-height: 1;
 }
 .content3-1 {
     display: flex;
@@ -170,7 +167,7 @@ body {
     margin-left: auto;
     border: 1px solid white;
     max-width: 50%;
-    height: 20%;
+    height: 40%;
     top: -68%;
     }
 .content3-1 h3{
@@ -182,6 +179,7 @@ body {
     font-weight: bold;
     color: #fff;
     z-index: 10;
+    position: absolute;
 }
 .content3-2 {
     display: flex;
@@ -220,22 +218,22 @@ body {
    .first{
     display: inline-block;
     background-color: #fff;
-    margin:5% 20%;
+    margin:5% 35%;
     padding: 50px 30px 25px 30px;
-    text-align: left;
     float: center;
-    position: relative;
+position:absolute;
     width: 30.5%;
     weight: 50%;
     opacity: .8;
    }
    .date{
     display: inline-block;
-    vertical-align: left;
+    text-align: left;
     list-style: none;
     text-decoration: none;
 }
    .first h4{
+    position: relative;
     font-family: $font-stack;
     font-size: 30px;
     text-align: left;
@@ -249,6 +247,124 @@ body {
     font-weight: 700;
     text-align: center;
     font-family: $font-stack;
-
    }
+
+.contact{
+    background-color: #1D1616;
+    attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    }
+    .contact h5{
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: $font-stack;
+        color: #fff;
+        border-bottom: 3px solid #fff;
+    }
+    #info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+    height: 40%;
+    top: 10%;
+    text-align: center;
+    }
+    .info ul, li{
+        list-style: none;
+        display: inline-block;
+        text-align: ctenter;;
+    }
+     h6{
+        display: inline-block;
+        text-align: center;
+        font-family: $font-stack;
+        font-size: 18px;
+        color: #fff;
+        line-height: 2px;
+    }
+    .contact p{
+        font-size: 15px;
+        color: #fff;
+        font-family: $font-stack;
+        line-height: 1;
+    }
+    .fa-envelope{
+        border: 1px solid #E1E1E1;
+        background-color: #E1E1E1;
+        padding: 10px 10px;
+        color: #C88400;
+        z-index: 100;
+    }
+    .fa-phone-square{
+        border: 1px solid #E1E1E1;
+        background-color: #E1E1E1;
+        padding: 10px 10px;
+        color: #C88400;
+    }
+    .fa-map-marker-alt{
+        border: 1px solid #E1E1E1;
+        background-color: #E1E1E1;
+        padding: 10px 10px;
+        color: #C88400;
+    }
+    .inputs{
+        display: inline;
+        float: center;
+        margin: auto;
+        margin-right: 10px;
+        margin-left: 0;   
+    }
+    input{
+
+        padding: 4px 70px;
+        text-align: center;
+    }
+    ::placeholder{
+        font-size: 15px;
+        font-weight: bold;
+        font-family: $font-stack;
+    }
+    textarea{
+        color: #000;
+            width: 52%;
+            font-size: 18px;
+            border: 2px solid #aaa;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-left: 0px;
+            box-sizing: border-box;
+    }
+    .button a{
+        position: center;
+        float: center;
+        color: #000;
+        font-family: $font-stack;
+        font-size:20px;
+        font-weight: bold;
+    }
+    .button{
+        border: 1px;
+        background-color: #C88400;
+        margin-top: 15px;
+        padding: 4px 15px;
+        width: 52%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer p {
+            font-size: 15px;
+            font-weight: bold;
+            font-family: $font-stack;
+            padding: 20px 20px;
+            text-align: center;
+            color: #C88400;
+        }
 }

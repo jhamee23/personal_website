@@ -6,19 +6,21 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
 
 <body>
     <section class="banner" id="banner">
         <div class="w3-container w3-center w3-animate-left">
             <div class="navbar">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT ME</a></li>
-                <li><a href="">EDUCATION</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#" id="none">HOME</a></li>
+                <li><a href="#" id="aboutme">ABOUT ME</a></li>
+                <li><a href="#" id="education">EDUCATION</a></li>
+                <li><a href="#" id="contact">CONTACT</a></li>
             </div>
             <div class="title">
                 <h1>Jhamee</h1>
@@ -26,72 +28,103 @@
         </div>
     </section>
     <section class="second">
+        <div class="wrapper">
         <div class="w3-container w3-center w3-animate-left">
             <div class="content1">
                 <img src="images/jhamee.png" align="left">
             </div>
         </div>
-        <div class="wrapper">
+        <div class="aimee">
             <h2>Jhamee Bangud</h2>
             <p>I'm an Information Technology student
                 <br>from Jose Rizal University,currently a
                 <br>graduating student.
             </p>
         </div>
-        </div>
-        <div class="image">
-        </div>
         <div id="content3">
             <div class="layer">
                 <h3>ABOUT ME</h3>
                 <p>
-                    I'm Jhamee Bangud, 20 years old, presently residing at Brgy. Sto Domingo Cainta Rizal, taking up BS Information Technology at Jose Rizal University and a graduating student. I can describe myself as a hardworking and a responsible person, I never skip task when it is not done yet. I'm willing to learn new knowledge and </p>
-            </div>`
-        </div>
-        <div class="content3-1">
-            <div class="layer">
-                <h3>SKILLS</h3>
-                <p>
-                </p>
+                    I'm Jhamee Bangud, 20 years old, presently residing at Brgy. Sto Domingo Cainta Rizal, taking up BS Information Technology at Jose Rizal University and a graduating student.I can describe myself as a hardworking and a responsible person, I never skip task when it is not done yet. I'm willing to learn new knowledge and </p>
+                <button href="#" class="show_hide">Read More</button>
+                <div id="aboutme">jksdfgbsjkdbfuksdhbfjksdhfsdf</div>
             </div>
         </div>
-        <div class="content3-2">
-            <div class="layer">
-                <h3>KAHIT ANO</h3>
-            </div>
         </div>
     </section>
     <section class="third">
         <div class="first">
             <h4>EDUCATION</h4>
-        <ul>
-            <li>
-               <span class="date">2005-2010</span>
-               <p class="elem">
-                <span class="text-bold">ELEMENTARY</span>
-                <br>Marick Elementary School
-                <br>Cainta,Rizal   
-               </p> 
-            </li>
-            <li>
-                <span class="date">2010-2014</span>
-               <p class="HS">
-                <span class="text-bold">HIGH SCHOOL</span>
-                <br>Francisco P. Felix Mem. Nat'l High School
-                <br>Cainta,Rizal   
-               </p> 
-            </li>
-             <li>
-                <span class="date">2014-2018</span>
-               <p class="college">
-                <span class="text-bold">COLLEGE</span>
-                <br>Jose RizalUniversity
-                <br>Cainta,Rizal   
-               </p> 
-            </li>
-        </ul>
-       </div>
+            <ul>
+                <li>
+                    <span class="date">2005-2010</span>
+                    <p class="elem">
+                        <span class="text-bold">ELEMENTARY</span>
+                        <br>Marick Elementary School
+                        <br>Cainta,Rizal
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2010-2014</span>
+                    <p class="HS">
+                        <span class="text-bold">HIGH SCHOOL</span>
+                        <br>Francisco P. Felix Mem. Nat'l High School
+                        <br>Cainta,Rizal
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2014-2018</span>
+                    <p class="college">
+                        <span class="text-bold">COLLEGE</span>
+                        <br>Jose RizalUniversity
+                        <br>Cainta,Rizal
+                    </p>
+                </li>
+            </ul>
+        </div>
     </section>
+    <section class="contact">
+        <h5>Contact</h5>
+        <div id="info">
+            <li>
+                <i class="fas fa-envelope" style="font-size: 5em;"></i>
+                <div>
+                    <h6>Email</h6>
+                    <br>
+                    <p>jhamee623@gmail.com</p>
+                </div>
+            </li>
+            <li> <i class="fas fa-phone-square" style="font-size: 5em;"></i>
+                <div>
+                    <h6>Contact</h6>
+                    <br>
+                    <p>0933-385-7160</p>
+                </div>
+            </li>
+            <li> <i class="fas fa-map-marker-alt" style="font-size: 5em;"></i>
+                <div class="infor">
+                    <h6>Address</h6>
+                    <br>
+                    <p>Cainta, Rizal</p>
+                </div>
+            </li>
+        </div>
+        <div class="inputs">
+            <form>
+                <input type="text" placeholder="Enter name">
+                <input type="email" placeholder="Enter email">
+                <textarea rows="6" cols="60" placeholder="YOUR MESSAGE"></textarea>
+                <div class="button">
+                    <a href="">Send</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+            <div class="footer">
+                <p>ALL RIGHTS RESERVED 2017</p>
+            </div>
+        </section>
 </body>
 
 </html>
