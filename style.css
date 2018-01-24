@@ -6,7 +6,7 @@ body {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    width: 100%; }
+    width: 100vw; }
     body .banner .header img {
       display: inline-block;
       text-align: left; }
@@ -36,26 +36,12 @@ body {
       color: #fff;
       font-size: 18px;
       z-index: 50; }
-    body .banner a:hover {
-      background-color: #000;
-      width: 100%;
-      height: 100vh; }
-    @media screen and (min-width: 600px) {
-      body .banner .topnav a:not(:first-child) {
-        display: none; }
-      body .banner .topnav a.icon {
-        float: left;
-        display: block; } }
-    body .banner .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left; }
   body .second {
     background-color: #1D1616;
     background-attachment: fixed;
     background-size: cover;
     height: 80vh;
-    width: 100%; }
+    width: 100vw; }
     body .second .content1 p {
       display: inline-block;
       border-left: 6px solid #000;
@@ -161,19 +147,13 @@ body {
       width: 100%;
       height: 100%;
       font-family: "PT Sans Narrow", sans-serif; }
-    body .content3 .wrapper {
-      margin-right: auto;
-      margin-left: auto;
-      max-width: 960px;
-      padding-right: 10px;
-      padding-left: 10px; }
   body .third {
     background: url("images/joserizal.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     height: 100vh;
-    width: 100%; }
+    width: 100vw; }
     body .third .first {
       display: inline-block;
       background-color: #fff;
@@ -208,7 +188,7 @@ body {
     attachment: fixed;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     text-align: center; }
   body .contact h5 {
     display: inline-block;
@@ -313,5 +293,35 @@ body {
     weight: 30px;
     max-width: 960px;
     margin-right: 10%; }
+  @media screen and (max-width: 700px) {
+    body .banner {
+      height: 50%; }
+    body .content1 img {
+      width: 50%;
+      height: 50%;
+      margin-top: 10%;
+      margin-left: -5%; }
+    body .title h1 {
+      margin-left: 39%;
+      font-size: 5px; }
+    body .aimee h2, body p {
+      margin-left: -13%; }
+    body .aboutme {
+      margin-top: -50%;
+      width: 20%;
+      height: 10%; }
+    body .first ul {
+      width: 60%;
+      height: 90%;
+      font-size: 12px; }
+    body .info li {
+      width: 20%; }
+    body .inputs input {
+      height: 25px;
+      font-size: 12px; }
+    body .footer img {
+      margin-left: 4%; }
+    body .footer p {
+      margin-left: 10%; } }
 
 /*# sourceMappingURL=style.css.map */
