@@ -1,0 +1,50 @@
+// Lead Banner
+body {
+    margin: 0;
+    .banner {
+        background: url("images/sunflower.png") no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+
+
+        .header img {
+            display: inline-block;
+            text-align: left;
+        }
+        .title h1 {
+            display: inline-block;
+            margin-top: 10%;
+            font: 100% $font-stack2;
+            color: #fff;
+            font-size: 20vw;
+            text-align: center;
+        }
+        .navbar {
+            background: #C88400;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 15px;
+            width: 97.5%;
+            position: fixed;
+            z-index: 100;
+            opacity: .9;
+        }
+        .navbar li {
+            margin-top: 10px;
+            list-style: none;
+            text-align: center;
+            font: 100% $font-stack;
+        }
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            font-size: 18px;
+            z-index: 50;
+            &:hover{
+                background-color: #333;
+            }
+        }
+    }

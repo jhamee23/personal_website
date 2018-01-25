@@ -1,0 +1,43 @@
+//media queries
+@media screen and (max-width: 700px){
+            .banner{
+                height: 100vh;
+            }
+            .content1 img{
+                width: 50%;
+                height: 50%;
+                margin-top: 10%;
+                margin-left: -5%;
+            }
+            .title h1{
+                margin-left: 39%;
+                font-size: 5px;
+            }
+            .aimee h2, p{
+                margin-left: -13%;
+            }
+            .aboutme{
+                margin-top: -50%;
+                width: 20%;
+                height: 10%;
+            }
+            .first ul{
+                width: 60%;
+                height: 90%;
+                font-size: 12px;
+            }
+            .info li{
+                width: 20%;
+            }
+            .inputs input{
+                height: 25px;
+                font-size: 1px;
+            }
+            .footer img{
+                margin-left: 4%;
+            }
+            .footer p{
+                margin-left: 10%;
+                background-color: #000;
+            }
+        }
