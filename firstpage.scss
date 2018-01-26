@@ -1,4 +1,4 @@
-// Lead Banner
+// Lead banner: Title and nav bars
 body {
     margin: 0;
     .banner {
@@ -43,8 +43,5 @@ body {
             color: $primary-color;
             font-size: 18px;
             z-index: 50;
-            &:hover{
-                background-color: #333;
-            }
         }
     }

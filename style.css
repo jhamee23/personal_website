@@ -287,12 +287,17 @@ body {
     height: 25px;
     width: 25px;
     max-width: 960px;
-    margin-left: 47.5%; }
+    margin-left: 46.5%; }
   body #logo1 {
     height: 30px;
     weight: 30px;
     max-width: 960px;
     margin-right: 10%; }
+  body #logo2 {
+    height: 28px;
+    weight: 28px;
+    max-width: 960px;
+    margin-left: -10%; }
   @media screen and (max-width: 700px) {
     body .banner {
       height: 50%; }
@@ -306,22 +311,38 @@ body {
       font-size: 5px; }
     body .aimee h2, body p {
       margin-left: -13%; }
-    body .aboutme {
-      margin-top: -50%;
-      width: 20%;
-      height: 10%; }
-    body .first ul {
-      width: 60%;
+    body .content3 {
+      margin-top: -90%;
+      width: 10%;
+      height: 5%; }
+    body .first {
       height: 90%;
-      font-size: 12px; }
+      font-size: 11px;
+      margin-right: 10%; }
     body .info li {
-      width: 20%; }
+      width: 50%; }
+    body .fa-envelope, body .fa-phone-square, body .fa-map-marker-alt {
+      margin-left: -50%;
+      margin-top: -15px;
+      padding: 5px 15%; }
+    body #email h6, body #cont h6, body #address h6 {
+      font-size: 12px;
+      text-align: center;
+      margin-left: -50%; }
+    body #email p, body #cont p, body #address p {
+      font-size: 12px;
+      text-align: center;
+      margin-left: -50%; }
     body .inputs input {
-      height: 25px;
+      margin-top: -10px;
+      height: 20px;
       font-size: 12px; }
-    body .footer img {
-      margin-left: 4%; }
+    body .footer {
+      float: center;
+      margin-left: -20%; }
+    body #logo, body #logo1, body #logo2 {
+      float: center; }
     body .footer p {
-      margin-left: 10%; } }
+      margin-left: 20%; } }
 
 /*# sourceMappingURL=style.css.map */
